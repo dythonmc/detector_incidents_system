@@ -1,0 +1,12 @@
+[
+  {
+    "source_id": "220504",
+    "incident_type": "Archivo Vacío Inesperado",
+    "incident_details": "Se recibieron 2 archivos vacíos, superando la media histórica de ~0.28 para los Mon.",
+    "total_incidentes": 2,
+    "files_to_review": [
+      "QkRq0GTSCYcEkvA__BR_Anotaai_Wallet_payments_accounting_report_2025_09_07.csv",
+      "QkRqxGJmiYcEnrQ__BR_safemode_payments_accounting_report_2025_09_07.csv"
+    ]
+  }
+]
