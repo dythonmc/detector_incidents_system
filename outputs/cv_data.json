@@ -1,0 +1,131 @@
+[
+  {
+    "resource_id": "195385",
+    "general_volume_stats": {
+      "mean_rows": null,
+      "median_rows": null,
+      "stdev_rows": null,
+      "pct_empty_files": 0.0
+    },
+    "file_processing_daily_stats": [
+      {
+        "day": "Mon",
+        "mean_files": 0,
+        "median_files": 0
+      },
+      {
+        "day": "Tue",
+        "mean_files": 40,
+        "median_files": 38
+      },
+      {
+        "day": "Wed",
+        "mean_files": 32,
+        "median_files": 37
+      },
+      {
+        "day": "Thu",
+        "mean_files": 37,
+        "median_files": 37
+      },
+      {
+        "day": "Fri",
+        "mean_files": 45,
+        "median_files": 38
+      },
+      {
+        "day": "Sat",
+        "mean_files": 36,
+        "median_files": 36
+      },
+      {
+        "day": "Sun",
+        "mean_files": 0,
+        "median_files": 0
+      }
+    ],
+    "upload_schedule_daily_stats": [
+      {
+        "day": "Mon",
+        "upload_window_expected_utc": "08:00:00–09:00:00 UTC"
+      },
+      {
+        "day": "Tue",
+        "upload_window_expected_utc": "08:00:00–09:00:00 UTC"
+      },
+      {
+        "day": "Wed",
+        "upload_window_expected_utc": "08:00:00–09:00:00 UTC"
+      },
+      {
+        "day": "Thu",
+        "upload_window_expected_utc": "08:00:00–09:00:00 UTC"
+      },
+      {
+        "day": "Fri",
+        "upload_window_expected_utc": "08:00:00–09:00:00 UTC"
+      },
+      {
+        "day": "Sat",
+        "upload_window_expected_utc": "08:00:00–09:00:00 UTC"
+      },
+      {
+        "day": "Sun",
+        "upload_window_expected_utc": null
+      }
+    ],
+    "day_of_week_row_stats": [
+      {
+        "day": "Mon",
+        "rows_mean": 13.25,
+        "rows_median": 2.0,
+        "empty_files_mean": 0.0
+      },
+      {
+        "day": "Tue",
+        "rows_mean": 1077272.33,
+        "rows_median": 984344.0,
+        "empty_files_mean": 0.0
+      },
+      {
+        "day": "Wed",
+        "rows_mean": 1406818.17,
+        "rows_median": 1465666.0,
+        "empty_files_mean": 0.0
+      },
+      {
+        "day": "Thu",
+        "rows_mean": 565671.92,
+        "rows_median": 518463.5,
+        "empty_files_mean": 0.0
+      },
+      {
+        "day": "Fri",
+        "rows_mean": 571679.0,
+        "rows_median": 540203.5,
+        "empty_files_mean": 0.0
+      },
+      {
+        "day": "Sat",
+        "rows_mean": 566643.33,
+        "rows_median": 573718.0,
+        "empty_files_mean": 0.0
+      },
+      {
+        "day": "Sun",
+        "rows_mean": null,
+        "rows_median": null,
+        "empty_files_mean": null
+      }
+    ],
+    "insights_for_incidences": [
+      "Files appearing on Sunday would be anomalous, as there is a consistent absence of activity.",
+      "Expect consistent batch uploads Tuesday-Saturday during 08:00-08:13 UTC.",
+      "Most uploads occur in a tight 08:00-08:13 UTC window (except Monday).",
+      "Sunday has a complete absence of activity (0 files across all entities).",
+      "Files with formats other than CSV would be anomalous (100% CSV historically).",
+      "The data source has a 100% processing success rate with no failed, duplicated, or empty files."
+    ],
+    "source_id": "195385"
+  }
+]
