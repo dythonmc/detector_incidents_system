@@ -119,13 +119,2202 @@
       }
     ],
     "insights_for_incidences": [
-      "Files appearing on Sunday would be anomalous, as there is a consistent absence of activity.",
-      "Expect consistent batch uploads Tuesday-Saturday during 08:00-08:13 UTC.",
-      "Most uploads occur in a tight 08:00-08:13 UTC window (except Monday).",
-      "Sunday has a complete absence of activity (0 files across all entities).",
-      "Files with formats other than CSV would be anomalous (100% CSV historically).",
-      "The data source has a 100% processing success rate with no failed, duplicated, or empty files."
+      "Expect consistent batch uploads Tuesday-Saturday during 08:00-08:13 UTC",
+      "Files appearing on Sunday would be anomalous (consistently zero in historical data)",
+      "Files with formats other than CSV would be anomalous (100% CSV historically)",
+      "Significant deviations from entity-specific volume patterns should be investigated",
+      "Complete absence of uploads on Sunday, minimal activity on Monday",
+      "Wednesday consistently shows highest volume"
     ],
     "source_id": "195385"
+  },
+  {
+    "resource_id": "195436",
+    "general_volume_stats": {
+      "mean_rows": 108563.46,
+      "median_rows": 150000.0,
+      "stdev_rows": 60601.24,
+      "pct_empty_files": 30.23
+    },
+    "file_processing_daily_stats": [
+      {
+        "day": "Mon",
+        "mean_files": 1,
+        "median_files": 1
+      },
+      {
+        "day": "Tue",
+        "mean_files": 1,
+        "median_files": 1
+      },
+      {
+        "day": "Wed",
+        "mean_files": 1,
+        "median_files": 1
+      },
+      {
+        "day": "Thu",
+        "mean_files": 1,
+        "median_files": 1
+      },
+      {
+        "day": "Fri",
+        "mean_files": 1,
+        "median_files": 1
+      },
+      {
+        "day": "Sat",
+        "mean_files": 1,
+        "median_files": 1
+      },
+      {
+        "day": "Sun",
+        "mean_files": 1,
+        "median_files": 1
+      }
+    ],
+    "upload_schedule_daily_stats": [
+      {
+        "day": "Mon",
+        "upload_window_expected_utc": "15:00:00–15:00:00 UTC"
+      },
+      {
+        "day": "Tue",
+        "upload_window_expected_utc": "14:00:00–14:00:00 UTC"
+      },
+      {
+        "day": "Wed",
+        "upload_window_expected_utc": "14:00:00–14:00:00 UTC"
+      },
+      {
+        "day": "Thu",
+        "upload_window_expected_utc": "14:00:00–14:00:00 UTC"
+      },
+      {
+        "day": "Fri",
+        "upload_window_expected_utc": "15:00:00–14:00:00 UTC"
+      },
+      {
+        "day": "Sat",
+        "upload_window_expected_utc": "15:00:00–15:00:00 UTC"
+      },
+      {
+        "day": "Sun",
+        "upload_window_expected_utc": "15:00:00–15:00:00 UTC"
+      }
+    ],
+    "day_of_week_row_stats": [
+      {
+        "day": "Mon",
+        "rows_mean": 18625.13,
+        "rows_median": 0.0,
+        "empty_files_mean": 0.83
+      },
+      {
+        "day": "Tue",
+        "rows_mean": 13201.16,
+        "rows_median": 0.0,
+        "empty_files_mean": 0.84
+      },
+      {
+        "day": "Wed",
+        "rows_mean": 124260.81,
+        "rows_median": 150000.0,
+        "empty_files_mean": 0.05
+      },
+      {
+        "day": "Thu",
+        "rows_mean": 123221.41,
+        "rows_median": 150000.0,
+        "empty_files_mean": 0.01
+      },
+      {
+        "day": "Fri",
+        "rows_mean": 117022.75,
+        "rows_median": 150000.0,
+        "empty_files_mean": 0.03
+      },
+      {
+        "day": "Sat",
+        "rows_mean": 119491.96,
+        "rows_median": 150000.0,
+        "empty_files_mean": 0.02
+      },
+      {
+        "day": "Sun",
+        "rows_mean": 107994.57,
+        "rows_median": 150000.0,
+        "empty_files_mean": 0.03
+      }
+    ],
+    "insights_for_incidences": [
+      "High concentration of empty files is expected on Monday and Tuesday.",
+      "Wednesday is the peak volume day.",
+      "Non-empty files are consistently capped at 150,000 rows.",
+      "Monday and Tuesday have a high empty file rate (>80%) and significantly lower volume.",
+      "Absence of weekend uploads would be anomalous.",
+      "Wednesdays typically have the largest sets of multi-part files."
+    ],
+    "source_id": "195436"
+  },
+  {
+    "resource_id": "195439",
+    "general_volume_stats": {
+      "mean_rows": null,
+      "median_rows": null,
+      "stdev_rows": null,
+      "pct_empty_files": 0.0
+    },
+    "file_processing_daily_stats": [
+      {
+        "day": "Mon",
+        "mean_files": 1,
+        "median_files": 1
+      },
+      {
+        "day": "Tue",
+        "mean_files": 1,
+        "median_files": 1
+      },
+      {
+        "day": "Wed",
+        "mean_files": 1,
+        "median_files": 1
+      },
+      {
+        "day": "Thu",
+        "mean_files": 1,
+        "median_files": 1
+      },
+      {
+        "day": "Fri",
+        "mean_files": 1,
+        "median_files": 1
+      },
+      {
+        "day": "Sat",
+        "mean_files": 1,
+        "median_files": 1
+      },
+      {
+        "day": "Sun",
+        "mean_files": 1,
+        "median_files": 1
+      }
+    ],
+    "upload_schedule_daily_stats": [
+      {
+        "day": "Mon",
+        "upload_window_expected_utc": "02:00:00–02:00:00 UTC"
+      },
+      {
+        "day": "Tue",
+        "upload_window_expected_utc": "02:00:00–02:00:00 UTC"
+      },
+      {
+        "day": "Wed",
+        "upload_window_expected_utc": "02:00:00–02:00:00 UTC"
+      },
+      {
+        "day": "Thu",
+        "upload_window_expected_utc": "02:00:00–02:00:00 UTC"
+      },
+      {
+        "day": "Fri",
+        "upload_window_expected_utc": "02:00:00–02:00:00 UTC"
+      },
+      {
+        "day": "Sat",
+        "upload_window_expected_utc": "02:00:00–02:00:00 UTC"
+      },
+      {
+        "day": "Sun",
+        "upload_window_expected_utc": "02:00:00–02:00:00 UTC"
+      }
+    ],
+    "day_of_week_row_stats": [
+      {
+        "day": "Mon",
+        "rows_mean": 101290.0,
+        "rows_median": 1451.5,
+        "empty_files_mean": 0.0
+      },
+      {
+        "day": "Tue",
+        "rows_mean": 97812.64,
+        "rows_median": 1358.0,
+        "empty_files_mean": 0.0
+      },
+      {
+        "day": "Wed",
+        "rows_mean": 95411.23,
+        "rows_median": 1305.0,
+        "empty_files_mean": 0.0
+      },
+      {
+        "day": "Thu",
+        "rows_mean": 24736.64,
+        "rows_median": 1038.0,
+        "empty_files_mean": 0.0
+      },
+      {
+        "day": "Fri",
+        "rows_mean": 68130.64,
+        "rows_median": 1077.0,
+        "empty_files_mean": 0.0
+      },
+      {
+        "day": "Sat",
+        "rows_mean": 47490.64,
+        "rows_median": 1129.0,
+        "empty_files_mean": 0.0
+      },
+      {
+        "day": "Sun",
+        "rows_mean": 56951.0,
+        "rows_median": 2151.5,
+        "empty_files_mean": 0.0
+      }
+    ],
+    "insights_for_incidences": [
+      "One file per day pattern is consistent.",
+      "Consistent daily uploads with no gaps >1 day.",
+      "A consistent 3-day lag between the filename date and upload date is expected.",
+      "No empty files are expected; 100% of files contain data (minimum 517 rows).",
+      "Weekend processing is active and substantial, matching weekday patterns.",
+      "There was a file size transition on 2025-05-29: files averaged ~440k rows before, and ~1,200 rows after."
+    ],
+    "source_id": "195439"
+  },
+  {
+    "resource_id": "196125",
+    "general_volume_stats": {
+      "mean_rows": 40694.36,
+      "median_rows": 3868.5,
+      "stdev_rows": 137443.75,
+      "pct_empty_files": 2.64
+    },
+    "file_processing_daily_stats": [
+      {
+        "day": "Mon",
+        "mean_files": 2,
+        "median_files": 0
+      },
+      {
+        "day": "Tue",
+        "mean_files": 50,
+        "median_files": 44
+      },
+      {
+        "day": "Wed",
+        "mean_files": 37,
+        "median_files": 42
+      },
+      {
+        "day": "Thu",
+        "mean_files": 45,
+        "median_files": 43
+      },
+      {
+        "day": "Fri",
+        "mean_files": 53,
+        "median_files": 44
+      },
+      {
+        "day": "Sat",
+        "mean_files": 53,
+        "median_files": 44
+      },
+      {
+        "day": "Sun",
+        "mean_files": 2,
+        "median_files": 0
+      }
+    ],
+    "upload_schedule_daily_stats": [
+      {
+        "day": "Mon",
+        "upload_window_expected_utc": "08:00:00–08:00:00 UTC"
+      },
+      {
+        "day": "Tue",
+        "upload_window_expected_utc": "08:00:00–08:00:00 UTC"
+      },
+      {
+        "day": "Wed",
+        "upload_window_expected_utc": "08:00:00–08:00:00 UTC"
+      },
+      {
+        "day": "Thu",
+        "upload_window_expected_utc": "08:00:00–08:00:00 UTC"
+      },
+      {
+        "day": "Fri",
+        "upload_window_expected_utc": "08:00:00–08:00:00 UTC"
+      },
+      {
+        "day": "Sat",
+        "upload_window_expected_utc": "08:00:00–08:00:00 UTC"
+      },
+      {
+        "day": "Sun",
+        "upload_window_expected_utc": "08:00:00–08:00:00 UTC"
+      }
+    ],
+    "day_of_week_row_stats": [
+      {
+        "day": "Mon",
+        "rows_mean": 0.0,
+        "rows_median": 0.0,
+        "empty_files_mean": 1.0
+      },
+      {
+        "day": "Tue",
+        "rows_mean": 109113.45,
+        "rows_median": 11692.0,
+        "empty_files_mean": 0.0
+      },
+      {
+        "day": "Wed",
+        "rows_mean": 22188.41,
+        "rows_median": 2960.0,
+        "empty_files_mean": 0.0
+      },
+      {
+        "day": "Thu",
+        "rows_mean": 23217.01,
+        "rows_median": 3132.5,
+        "empty_files_mean": 0.0
+      },
+      {
+        "day": "Fri",
+        "rows_mean": 24572.75,
+        "rows_median": 3286.5,
+        "empty_files_mean": 0.0
+      },
+      {
+        "day": "Sat",
+        "rows_mean": 31843.87,
+        "rows_median": 4145.0,
+        "empty_files_mean": 0.0
+      },
+      {
+        "day": "Sun",
+        "rows_mean": 0.0,
+        "rows_median": 0.0,
+        "empty_files_mean": 1.0
+      }
+    ],
+    "insights_for_incidences": [
+      "There is a clear Tuesday-Saturday active cycle; Monday and Sunday show minimal to no activity.",
+      "Uploads occur in an extremely tight window around 08:04-08:12 UTC.",
+      "Empty files are expected primarily on Monday/Sunday; an empty file on any other day would be an anomaly.",
+      "File processing failures are exclusively associated with the 'Saipos' entity.",
+      "95% of files contain fewer than 310,000 rows; any file significantly larger warrants investigation.",
+      "Tuesday is the peak volume day; exceptionally large files are more likely on this day."
+    ],
+    "source_id": "196125"
+  },
+  {
+    "resource_id": "199944",
+    "general_volume_stats": {
+      "mean_rows": 158631.07,
+      "median_rows": 83190.0,
+      "stdev_rows": 177607.94,
+      "pct_empty_files": 5.4
+    },
+    "file_processing_daily_stats": [
+      {
+        "day": "Mon",
+        "mean_files": 2,
+        "median_files": 2
+      },
+      {
+        "day": "Tue",
+        "mean_files": 2,
+        "median_files": 2
+      },
+      {
+        "day": "Wed",
+        "mean_files": 2,
+        "median_files": 2
+      },
+      {
+        "day": "Thu",
+        "mean_files": 2,
+        "median_files": 2
+      },
+      {
+        "day": "Fri",
+        "mean_files": 2,
+        "median_files": 2
+      },
+      {
+        "day": "Sat",
+        "mean_files": 2,
+        "median_files": 2
+      },
+      {
+        "day": "Sun",
+        "mean_files": 2,
+        "median_files": 2
+      }
+    ],
+    "upload_schedule_daily_stats": [
+      {
+        "day": "Mon",
+        "upload_window_expected_utc": "11:00:00–11:00:00 UTC"
+      },
+      {
+        "day": "Tue",
+        "upload_window_expected_utc": "11:00:00–11:00:00 UTC"
+      },
+      {
+        "day": "Wed",
+        "upload_window_expected_utc": "11:00:00–11:00:00 UTC"
+      },
+      {
+        "day": "Thu",
+        "upload_window_expected_utc": "11:00:00–11:00:00 UTC"
+      },
+      {
+        "day": "Fri",
+        "upload_window_expected_utc": "11:00:00–11:00:00 UTC"
+      },
+      {
+        "day": "Sat",
+        "upload_window_expected_utc": "11:00:00–11:00:00 UTC"
+      },
+      {
+        "day": "Sun",
+        "upload_window_expected_utc": "11:00:00–11:00:00 UTC"
+      }
+    ],
+    "day_of_week_row_stats": [
+      {
+        "day": "Mon",
+        "rows_mean": 141271.38,
+        "rows_median": 81846.0,
+        "empty_files_mean": 0.11
+      },
+      {
+        "day": "Tue",
+        "rows_mean": 104461.77,
+        "rows_median": 74511.0,
+        "empty_files_mean": 0.09
+      },
+      {
+        "day": "Wed",
+        "rows_mean": 208616.16,
+        "rows_median": 82107.0,
+        "empty_files_mean": 0.02
+      },
+      {
+        "day": "Thu",
+        "rows_mean": 106808.09,
+        "rows_median": 78811.0,
+        "empty_files_mean": 0.07
+      },
+      {
+        "day": "Fri",
+        "rows_mean": 207488.16,
+        "rows_median": 86897.0,
+        "empty_files_mean": 0.02
+      },
+      {
+        "day": "Sat",
+        "rows_mean": 169750.56,
+        "rows_median": 96258.0,
+        "empty_files_mean": 0.03
+      },
+      {
+        "day": "Sun",
+        "rows_mean": 145979.03,
+        "rows_median": 98208.0,
+        "empty_files_mean": 0.05
+      }
+    ],
+    "insights_for_incidences": [
+      "Consistent daily uploads across all days of week; mode=2 files per day (PIX+BANKING).",
+      "95% of uploads occur within tight 11:01-11:33 UTC window across all days.",
+      "Absence of weekend activity would be anomalous.",
+      "Multi-part uploads are associated with files containing >500k rows each.",
+      "Jan-Mar 2025 shows anomalous pattern with empty/near-empty files; considered outlier phase."
+    ],
+    "source_id": "199944"
+  },
+  {
+    "resource_id": "207936",
+    "general_volume_stats": {
+      "mean_rows": 4144.19,
+      "median_rows": 105.0,
+      "stdev_rows": 16939.94,
+      "pct_empty_files": 31.9
+    },
+    "file_processing_daily_stats": [
+      {
+        "day": "Mon",
+        "mean_files": 3,
+        "median_files": 3
+      },
+      {
+        "day": "Tue",
+        "mean_files": 3,
+        "median_files": 3
+      },
+      {
+        "day": "Wed",
+        "mean_files": 4,
+        "median_files": 3
+      },
+      {
+        "day": "Thu",
+        "mean_files": 3,
+        "median_files": 3
+      },
+      {
+        "day": "Fri",
+        "mean_files": 3,
+        "median_files": 3
+      },
+      {
+        "day": "Sat",
+        "mean_files": 2,
+        "median_files": 3
+      },
+      {
+        "day": "Sun",
+        "mean_files": 4,
+        "median_files": 3
+      }
+    ],
+    "upload_schedule_daily_stats": [
+      {
+        "day": "Mon",
+        "upload_window_expected_utc": "11:00:00–11:00:00 UTC"
+      },
+      {
+        "day": "Tue",
+        "upload_window_expected_utc": "11:00:00–11:00:00 UTC"
+      },
+      {
+        "day": "Wed",
+        "upload_window_expected_utc": "11:00:00–11:00:00 UTC"
+      },
+      {
+        "day": "Thu",
+        "upload_window_expected_utc": "11:00:00–11:00:00 UTC"
+      },
+      {
+        "day": "Fri",
+        "upload_window_expected_utc": "11:00:00–11:00:00 UTC"
+      },
+      {
+        "day": "Sat",
+        "upload_window_expected_utc": "11:00:00–11:00:00 UTC"
+      },
+      {
+        "day": "Sun",
+        "upload_window_expected_utc": "11:00:00–11:00:00 UTC"
+      }
+    ],
+    "day_of_week_row_stats": [
+      {
+        "day": "Mon",
+        "rows_mean": 1306.9,
+        "rows_median": 22.0,
+        "empty_files_mean": 0.4
+      },
+      {
+        "day": "Tue",
+        "rows_mean": 4130.54,
+        "rows_median": 141.0,
+        "empty_files_mean": 0.32
+      },
+      {
+        "day": "Wed",
+        "rows_mean": 1632.8,
+        "rows_median": 145.5,
+        "empty_files_mean": 0.35
+      },
+      {
+        "day": "Thu",
+        "rows_mean": 1794.95,
+        "rows_median": 125.0,
+        "empty_files_mean": 0.3
+      },
+      {
+        "day": "Fri",
+        "rows_mean": 12343.26,
+        "rows_median": 152.0,
+        "empty_files_mean": 0.19
+      },
+      {
+        "day": "Sat",
+        "rows_mean": 1989.99,
+        "rows_median": 87.0,
+        "empty_files_mean": 0.38
+      },
+      {
+        "day": "Sun",
+        "rows_mean": 1685.58,
+        "rows_median": 33.5,
+        "empty_files_mean": 0.38
+      }
+    ],
+    "insights_for_incidences": [
+      "Absence of weekday uploads would be anomalous.",
+      "31.9% of files contain 0 rows; predominantly __POS channel files.",
+      "Consistent 3 files per day pattern (mode=3) across all days of week.",
+      "Upload timing: Extremely consistent 11:01-11:44 UTC window.",
+      "Friday shows exceptional peak volume.",
+      "Weekend files typically uploaded Monday (lag = 1-2 days).",
+      "Weekends always have SHOP & PAGO small files; POS files are structurally empty (rows = 0)."
+    ],
+    "source_id": "207936"
+  },
+  {
+    "resource_id": "207938",
+    "general_volume_stats": {
+      "mean_rows": 4155.92,
+      "median_rows": 119.0,
+      "stdev_rows": 16948.8,
+      "pct_empty_files": 31.9
+    },
+    "file_processing_daily_stats": [
+      {
+        "day": "Mon",
+        "mean_files": 3,
+        "median_files": 3
+      },
+      {
+        "day": "Tue",
+        "mean_files": 3,
+        "median_files": 3
+      },
+      {
+        "day": "Wed",
+        "mean_files": 4,
+        "median_files": 3
+      },
+      {
+        "day": "Thu",
+        "mean_files": 3,
+        "median_files": 3
+      },
+      {
+        "day": "Fri",
+        "mean_files": 3,
+        "median_files": 3
+      },
+      {
+        "day": "Sat",
+        "mean_files": 2,
+        "median_files": 3
+      },
+      {
+        "day": "Sun",
+        "mean_files": 4,
+        "median_files": 3
+      }
+    ],
+    "upload_schedule_daily_stats": [
+      {
+        "day": "Mon",
+        "upload_window_expected_utc": "12:00:00–12:00:00 UTC"
+      },
+      {
+        "day": "Tue",
+        "upload_window_expected_utc": "12:00:00–12:00:00 UTC"
+      },
+      {
+        "day": "Wed",
+        "upload_window_expected_utc": "12:00:00–12:00:00 UTC"
+      },
+      {
+        "day": "Thu",
+        "upload_window_expected_utc": "12:00:00–12:00:00 UTC"
+      },
+      {
+        "day": "Fri",
+        "upload_window_expected_utc": "12:00:00–12:00:00 UTC"
+      },
+      {
+        "day": "Sat",
+        "upload_window_expected_utc": "12:00:00–12:00:00 UTC"
+      },
+      {
+        "day": "Sun",
+        "upload_window_expected_utc": null
+      }
+    ],
+    "day_of_week_row_stats": [
+      {
+        "day": "Mon",
+        "rows_mean": 436869.09,
+        "rows_median": 406646.0,
+        "empty_files_mean": 0.18
+      },
+      {
+        "day": "Tue",
+        "rows_mean": 222918.3,
+        "rows_median": 248740.0,
+        "empty_files_mean": 0.15
+      },
+      {
+        "day": "Wed",
+        "rows_mean": 160930.15,
+        "rows_median": 216905.5,
+        "empty_files_mean": 0.08
+      },
+      {
+        "day": "Thu",
+        "rows_mean": 296810.0,
+        "rows_median": 236455.0,
+        "empty_files_mean": 0.21
+      },
+      {
+        "day": "Fri",
+        "rows_mean": 157050.3,
+        "rows_median": 225715.0,
+        "empty_files_mean": 0.09
+      },
+      {
+        "day": "Sat",
+        "rows_mean": 236639.97,
+        "rows_median": 236190.0,
+        "empty_files_mean": 0.31
+      },
+      {
+        "day": "Sun",
+        "rows_mean": null,
+        "rows_median": null,
+        "empty_files_mean": null
+      }
+    ],
+    "insights_for_incidences": [
+      "No uploads are expected on Sunday.",
+      "A high percentage (31.9%) of files are empty.",
+      "98% of empty files are associated with the POS_MARKETPLACE channel.",
+      "Uploads are very consistent, typically in a 10:45-12:30 UTC window.",
+      "Gaps in uploads greater than 24 hours are rare.",
+      "Thursday is the peak volume day.",
+      "File volume is highly skewed (mean is much larger than median)."
+    ],
+    "source_id": "207938"
+  },
+  {
+    "resource_id": "209773",
+    "general_volume_stats": {
+      "mean_rows": 143772.38,
+      "median_rows": 146080.0,
+      "stdev_rows": 59909.34,
+      "pct_empty_files": 2.39
+    },
+    "file_processing_daily_stats": [
+      {
+        "day": "Mon",
+        "mean_files": 1,
+        "median_files": 1
+      },
+      {
+        "day": "Tue",
+        "mean_files": 1,
+        "median_files": 1
+      },
+      {
+        "day": "Wed",
+        "mean_files": 1,
+        "median_files": 1
+      },
+      {
+        "day": "Thu",
+        "mean_files": 1,
+        "median_files": 1
+      },
+      {
+        "day": "Fri",
+        "mean_files": 1,
+        "median_files": 1
+      },
+      {
+        "day": "Sat",
+        "mean_files": 1,
+        "median_files": 1
+      },
+      {
+        "day": "Sun",
+        "mean_files": 1,
+        "median_files": 1
+      }
+    ],
+    "upload_schedule_daily_stats": [
+      {
+        "day": "Mon",
+        "upload_window_expected_utc": "15:00:00–15:00:00 UTC"
+      },
+      {
+        "day": "Tue",
+        "upload_window_expected_utc": "15:00:00–15:00:00 UTC"
+      },
+      {
+        "day": "Wed",
+        "upload_window_expected_utc": "15:00:00–15:00:00 UTC"
+      },
+      {
+        "day": "Thu",
+        "upload_window_expected_utc": "15:00:00–15:00:00 UTC"
+      },
+      {
+        "day": "Fri",
+        "upload_window_expected_utc": "15:00:00–15:00:00 UTC"
+      },
+      {
+        "day": "Sat",
+        "upload_window_expected_utc": "15:00:00–15:00:00 UTC"
+      },
+      {
+        "day": "Sun",
+        "upload_window_expected_utc": "15:00:00–15:00:00 UTC"
+      }
+    ],
+    "day_of_week_row_stats": [
+      {
+        "day": "Mon",
+        "rows_mean": 174707.07,
+        "rows_median": 173213.5,
+        "empty_files_mean": 0.03
+      },
+      {
+        "day": "Tue",
+        "rows_mean": 123229.4,
+        "rows_median": 116695.0,
+        "empty_files_mean": 0.05
+      },
+      {
+        "day": "Wed",
+        "rows_mean": 131025.96,
+        "rows_median": 117860.0,
+        "empty_files_mean": 0.0
+      },
+      {
+        "day": "Thu",
+        "rows_mean": 145390.89,
+        "rows_median": 149849.5,
+        "empty_files_mean": 0.01
+      },
+      {
+        "day": "Fri",
+        "rows_mean": 122627.2,
+        "rows_median": 123043.0,
+        "empty_files_mean": 0.03
+      },
+      {
+        "day": "Sat",
+        "rows_mean": 143417.17,
+        "rows_median": 137924.0,
+        "empty_files_mean": 0.0
+      },
+      {
+        "day": "Sun",
+        "rows_mean": 155633.43,
+        "rows_median": 159913.0,
+        "empty_files_mean": 0.06
+      }
+    ],
+    "insights_for_incidences": [
+      "Uploads are expected daily, including weekends.",
+      "A single file per day is the norm (mode=1 across all days).",
+      "The normal upload window is highly consistent: 15:10-15:25 UTC.",
+      "The normal row count is between 26,350 and 261,195.",
+      "Normal lag time between statement date and upload date is 1 day.",
+      "Watch for clusters of micro-files (<=300 rows) or empty files."
+    ],
+    "source_id": "209773"
+  },
+  {
+    "resource_id": "211544",
+    "general_volume_stats": {
+      "mean_rows": 6107.02,
+      "median_rows": 5929.0,
+      "stdev_rows": 2831.6,
+      "pct_empty_files": 0.0
+    },
+    "file_processing_daily_stats": [
+      {
+        "day": "Mon",
+        "mean_files": 1,
+        "median_files": 1
+      },
+      {
+        "day": "Tue",
+        "mean_files": 1,
+        "median_files": 1
+      },
+      {
+        "day": "Wed",
+        "mean_files": 1,
+        "median_files": 1
+      },
+      {
+        "day": "Thu",
+        "mean_files": 1,
+        "median_files": 1
+      },
+      {
+        "day": "Fri",
+        "mean_files": 1,
+        "median_files": 1
+      },
+      {
+        "day": "Sat",
+        "mean_files": 1,
+        "median_files": 1
+      },
+      {
+        "day": "Sun",
+        "mean_files": 1,
+        "median_files": 1
+      }
+    ],
+    "upload_schedule_daily_stats": [
+      {
+        "day": "Mon",
+        "upload_window_expected_utc": "15:00:00–15:00:00 UTC"
+      },
+      {
+        "day": "Tue",
+        "upload_window_expected_utc": "15:00:00–15:00:00 UTC"
+      },
+      {
+        "day": "Wed",
+        "upload_window_expected_utc": "15:00:00–15:00:00 UTC"
+      },
+      {
+        "day": "Thu",
+        "upload_window_expected_utc": "15:00:00–15:00:00 UTC"
+      },
+      {
+        "day": "Fri",
+        "upload_window_expected_utc": "15:00:00–15:00:00 UTC"
+      },
+      {
+        "day": "Sat",
+        "upload_window_expected_utc": "15:00:00–15:00:00 UTC"
+      },
+      {
+        "day": "Sun",
+        "upload_window_expected_utc": "15:00:00–15:00:00 UTC"
+      }
+    ],
+    "day_of_week_row_stats": [
+      {
+        "day": "Mon",
+        "rows_mean": 5953.54,
+        "rows_median": 5477.0,
+        "empty_files_mean": 0.0
+      },
+      {
+        "day": "Tue",
+        "rows_mean": 7166.61,
+        "rows_median": 7339.0,
+        "empty_files_mean": 0.0
+      },
+      {
+        "day": "Wed",
+        "rows_mean": 5264.61,
+        "rows_median": 4430.0,
+        "empty_files_mean": 0.0
+      },
+      {
+        "day": "Thu",
+        "rows_mean": 5141.38,
+        "rows_median": 4497.5,
+        "empty_files_mean": 0.0
+      },
+      {
+        "day": "Fri",
+        "rows_mean": 5311.68,
+        "rows_median": 4904.0,
+        "empty_files_mean": 0.0
+      },
+      {
+        "day": "Sat",
+        "rows_mean": 5259.0,
+        "rows_median": 4852.0,
+        "empty_files_mean": 0.0
+      },
+      {
+        "day": "Sun",
+        "rows_mean": 5877.69,
+        "rows_median": 5443.0,
+        "empty_files_mean": 0.0
+      }
+    ],
+    "insights_for_incidences": [
+      "Daily uploads are the norm; absence on isolated dates would be anomalous.",
+      "Uploads outside the 14:00-18:00 UTC window would be unusual.",
+      "The normal 95% interval for row count is between 557 and 11,657.",
+      "Small files (<=100 rows) appear in short bursts, not randomly.",
+      "Quarterly backfill events involving multiple files are considered normal.",
+      "A clear downward trend in file sizes was observed after March 2025.",
+      "Tuesday is the peak volume day."
+    ],
+    "source_id": "211544"
+  },
+  {
+    "resource_id": "220504",
+    "general_volume_stats": {
+      "mean_rows": 545421.15,
+      "median_rows": 2170.5,
+      "stdev_rows": 947419.28,
+      "pct_empty_files": 24.81
+    },
+    "file_processing_daily_stats": [
+      {
+        "day": "Mon",
+        "mean_files": 16,
+        "median_files": 16
+      },
+      {
+        "day": "Tue",
+        "mean_files": 19,
+        "median_files": 18
+      },
+      {
+        "day": "Wed",
+        "mean_files": 15,
+        "median_files": 16
+      },
+      {
+        "day": "Thu",
+        "mean_files": 17,
+        "median_files": 17
+      },
+      {
+        "day": "Fri",
+        "mean_files": 19,
+        "median_files": 17
+      },
+      {
+        "day": "Sat",
+        "mean_files": 17,
+        "median_files": 17
+      },
+      {
+        "day": "Sun",
+        "mean_files": 17,
+        "median_files": 17
+      }
+    ],
+    "upload_schedule_daily_stats": [
+      {
+        "day": "Mon",
+        "upload_window_expected_utc": "08:00:00–08:00:00 UTC"
+      },
+      {
+        "day": "Tue",
+        "upload_window_expected_utc": "08:00:00–08:00:00 UTC"
+      },
+      {
+        "day": "Wed",
+        "upload_window_expected_utc": "08:00:00–08:00:00 UTC"
+      },
+      {
+        "day": "Thu",
+        "upload_window_expected_utc": "08:00:00–08:00:00 UTC"
+      },
+      {
+        "day": "Fri",
+        "upload_window_expected_utc": "08:00:00–08:00:00 UTC"
+      },
+      {
+        "day": "Sat",
+        "upload_window_expected_utc": "08:00:00–08:00:00 UTC"
+      },
+      {
+        "day": "Sun",
+        "upload_window_expected_utc": "08:00:00–08:00:00 UTC"
+      }
+    ],
+    "day_of_week_row_stats": [
+      {
+        "day": "Mon",
+        "rows_mean": 681122.49,
+        "rows_median": 3047.0,
+        "empty_files_mean": 0.28
+      },
+      {
+        "day": "Tue",
+        "rows_mean": 533679.63,
+        "rows_median": 4519.5,
+        "empty_files_mean": 0.22
+      },
+      {
+        "day": "Wed",
+        "rows_mean": 445397.54,
+        "rows_median": 1169.0,
+        "empty_files_mean": 0.24
+      },
+      {
+        "day": "Thu",
+        "rows_mean": 526683.24,
+        "rows_median": 2262.0,
+        "empty_files_mean": 0.23
+      },
+      {
+        "day": "Fri",
+        "rows_mean": 530697.9,
+        "rows_median": 2088.5,
+        "empty_files_mean": 0.24
+      },
+      {
+        "day": "Sat",
+        "rows_mean": 527052.94,
+        "rows_median": 2151.0,
+        "empty_files_mean": 0.25
+      },
+      {
+        "day": "Sun",
+        "rows_mean": 553318.59,
+        "rows_median": 2694.5,
+        "empty_files_mean": 0.27
+      }
+    ],
+    "insights_for_incidences": [
+      "Perfect daily continuity (~17 files per day).",
+      "Extremely consistent upload window (08:08-08:18 UTC).",
+      "File size distribution is highly skewed (mean: 545,421 vs median: 2,170.5 rows).",
+      "Empty files (24.8%) are common and concentrated in specific entities (Innovation, POC, safemode are 100% empty).",
+      "Date lag between filename and upload is consistently T+1.",
+      "Anomaly guidance: Any new entity, date lag >2 days, upload time outside 08:08-08:18 UTC, or multi-part files would deviate from historical pattern."
+    ],
+    "source_id": "220504"
+  },
+  {
+    "resource_id": "220505",
+    "general_volume_stats": {
+      "mean_rows": 251229.6,
+      "median_rows": 262117.5,
+      "stdev_rows": 113864.66,
+      "pct_empty_files": 3.7
+    },
+    "file_processing_daily_stats": [
+      {
+        "day": "Mon",
+        "mean_files": 2,
+        "median_files": 2
+      },
+      {
+        "day": "Tue",
+        "mean_files": 3,
+        "median_files": 2
+      },
+      {
+        "day": "Wed",
+        "mean_files": 2,
+        "median_files": 2
+      },
+      {
+        "day": "Thu",
+        "mean_files": 2,
+        "median_files": 2
+      },
+      {
+        "day": "Fri",
+        "mean_files": 3,
+        "median_files": 2
+      },
+      {
+        "day": "Sat",
+        "mean_files": 2,
+        "median_files": 2
+      },
+      {
+        "day": "Sun",
+        "mean_files": 2,
+        "median_files": 2
+      }
+    ],
+    "upload_schedule_daily_stats": [
+      {
+        "day": "Mon",
+        "upload_window_expected_utc": "08:00:00–08:00:00 UTC"
+      },
+      {
+        "day": "Tue",
+        "upload_window_expected_utc": "08:00:00–08:00:00 UTC"
+      },
+      {
+        "day": "Wed",
+        "upload_window_expected_utc": "08:00:00–08:00:00 UTC"
+      },
+      {
+        "day": "Thu",
+        "upload_window_expected_utc": "08:00:00–08:00:00 UTC"
+      },
+      {
+        "day": "Fri",
+        "upload_window_expected_utc": "08:00:00–08:00:00 UTC"
+      },
+      {
+        "day": "Sat",
+        "upload_window_expected_utc": "08:00:00–08:00:00 UTC"
+      },
+      {
+        "day": "Sun",
+        "upload_window_expected_utc": "08:00:00–08:00:00 UTC"
+      }
+    ],
+    "day_of_week_row_stats": [
+      {
+        "day": "Mon",
+        "rows_mean": 314943.18,
+        "rows_median": 314476.5,
+        "empty_files_mean": 0.0
+      },
+      {
+        "day": "Tue",
+        "rows_mean": 239642.55,
+        "rows_median": 234664.0,
+        "empty_files_mean": 0.0
+      },
+      {
+        "day": "Wed",
+        "rows_mean": 196352.69,
+        "rows_median": 231363.0,
+        "empty_files_mean": 0.0
+      },
+      {
+        "day": "Thu",
+        "rows_mean": 218516.97,
+        "rows_median": 249519.0,
+        "empty_files_mean": 0.0
+      },
+      {
+        "day": "Fri",
+        "rows_mean": 229707.9,
+        "rows_median": 263062.0,
+        "empty_files_mean": 0.0
+      },
+      {
+        "day": "Sat",
+        "rows_mean": 260515.15,
+        "rows_median": 296726.0,
+        "empty_files_mean": 0.0
+      },
+      {
+        "day": "Sun",
+        "rows_mean": 302535.98,
+        "rows_median": 330694.0,
+        "empty_files_mean": 0.0
+      }
+    ],
+    "insights_for_incidences": [
+      "Absence of files on any day would be anomalous.",
+      "File count consistency: Two files per day pattern.",
+      "\"Filtered\" zero-row uploads occur regularly (~4 per month) and are considered normal background noise.",
+      "Weekend behavior is identical to weekdays.",
+      "Sunday shows the highest per-file volume (330k rows median)."
+    ],
+    "source_id": "220505"
+  },
+  {
+    "resource_id": "220506",
+    "general_volume_stats": {
+      "mean_rows": 656197.17,
+      "median_rows": 420467.0,
+      "stdev_rows": 626832.49,
+      "pct_empty_files": 0.0
+    },
+    "file_processing_daily_stats": [
+      {
+        "day": "Mon",
+        "mean_files": 1,
+        "median_files": 1
+      },
+      {
+        "day": "Tue",
+        "mean_files": 1,
+        "median_files": 1
+      },
+      {
+        "day": "Wed",
+        "mean_files": 1,
+        "median_files": 1
+      },
+      {
+        "day": "Thu",
+        "mean_files": 1,
+        "median_files": 1
+      },
+      {
+        "day": "Fri",
+        "mean_files": 1,
+        "median_files": 1
+      },
+      {
+        "day": "Sat",
+        "mean_files": 1,
+        "median_files": 1
+      },
+      {
+        "day": "Sun",
+        "mean_files": 1,
+        "median_files": 1
+      }
+    ],
+    "upload_schedule_daily_stats": [
+      {
+        "day": "Mon",
+        "upload_window_expected_utc": "08:00:00–08:00:00 UTC"
+      },
+      {
+        "day": "Tue",
+        "upload_window_expected_utc": "08:00:00–08:00:00 UTC"
+      },
+      {
+        "day": "Wed",
+        "upload_window_expected_utc": "08:00:00–08:00:00 UTC"
+      },
+      {
+        "day": "Thu",
+        "upload_window_expected_utc": "08:00:00–08:00:00 UTC"
+      },
+      {
+        "day": "Fri",
+        "upload_window_expected_utc": "08:00:00–08:00:00 UTC"
+      },
+      {
+        "day": "Sat",
+        "upload_window_expected_utc": "08:00:00–08:00:00 UTC"
+      },
+      {
+        "day": "Sun",
+        "upload_window_expected_utc": "08:00:00–08:00:00 UTC"
+      }
+    ],
+    "day_of_week_row_stats": [
+      {
+        "day": "Mon",
+        "rows_mean": 687638.7,
+        "rows_median": 423680.0,
+        "empty_files_mean": 0.0
+      },
+      {
+        "day": "Tue",
+        "rows_mean": 782868.9,
+        "rows_median": 641616.0,
+        "empty_files_mean": 0.0
+      },
+      {
+        "day": "Wed",
+        "rows_mean": 701617.03,
+        "rows_median": 688459.0,
+        "empty_files_mean": 0.0
+      },
+      {
+        "day": "Thu",
+        "rows_mean": 571471.75,
+        "rows_median": 542043.5,
+        "empty_files_mean": 0.0
+      },
+      {
+        "day": "Fri",
+        "rows_mean": 584321.14,
+        "rows_median": 401977.0,
+        "empty_files_mean": 0.0
+      },
+      {
+        "day": "Sat",
+        "rows_mean": 577745.0,
+        "rows_median": 286060.0,
+        "empty_files_mean": 0.0
+      },
+      {
+        "day": "Sun",
+        "rows_mean": 696706.53,
+        "rows_median": 420709.0,
+        "empty_files_mean": 0.0
+      }
+    ],
+    "insights_for_incidences": [
+      "Exactly one file per day pattern.",
+      "No empty files, failures, or duplicates recorded.",
+      "Absence on any calendar day would be unusual.",
+      "Normal range 45,470-1,884,789 rows (95% interval).",
+      "Two distinct upload windows are part of the baseline: a 14:11 UTC mean window and an 08:07 UTC mean window."
+    ],
+    "source_id": "220506"
+  },
+  {
+    "resource_id": "224602",
+    "general_volume_stats": {
+      "mean_rows": 442880.28,
+      "median_rows": 473194.5,
+      "stdev_rows": 172570.59,
+      "pct_empty_files": 4.5
+    },
+    "file_processing_daily_stats": [
+      {
+        "day": "Mon",
+        "mean_files": 1,
+        "median_files": 1
+      },
+      {
+        "day": "Tue",
+        "mean_files": 1,
+        "median_files": 1
+      },
+      {
+        "day": "Wed",
+        "mean_files": 1,
+        "median_files": 1
+      },
+      {
+        "day": "Thu",
+        "mean_files": 1,
+        "median_files": 1
+      },
+      {
+        "day": "Fri",
+        "mean_files": 1,
+        "median_files": 1
+      },
+      {
+        "day": "Sat",
+        "mean_files": 1,
+        "median_files": 1
+      },
+      {
+        "day": "Sun",
+        "mean_files": 1,
+        "median_files": 1
+      }
+    ],
+    "upload_schedule_daily_stats": [
+      {
+        "day": "Mon",
+        "upload_window_expected_utc": "15:00:00–15:00:00 UTC"
+      },
+      {
+        "day": "Tue",
+        "upload_window_expected_utc": "14:00:00–14:00:00 UTC"
+      },
+      {
+        "day": "Wed",
+        "upload_window_expected_utc": "14:00:00–14:00:00 UTC"
+      },
+      {
+        "day": "Thu",
+        "upload_window_expected_utc": "14:00:00–14:00:00 UTC"
+      },
+      {
+        "day": "Fri",
+        "upload_window_expected_utc": "15:00:00–14:00:00 UTC"
+      },
+      {
+        "day": "Sat",
+        "upload_window_expected_utc": "15:00:00–15:00:00 UTC"
+      },
+      {
+        "day": "Sun",
+        "upload_window_expected_utc": "15:00:00–15:00:00 UTC"
+      }
+    ],
+    "day_of_week_row_stats": [
+      {
+        "day": "Mon",
+        "rows_mean": 515493.39,
+        "rows_median": 553354.0,
+        "empty_files_mean": 0.0
+      },
+      {
+        "day": "Tue",
+        "rows_mean": 416063.77,
+        "rows_median": 414596.5,
+        "empty_files_mean": 0.0
+      },
+      {
+        "day": "Wed",
+        "rows_mean": 435280.58,
+        "rows_median": 429738.0,
+        "empty_files_mean": 0.0
+      },
+      {
+        "day": "Thu",
+        "rows_mean": 323449.41,
+        "rows_median": 405661.0,
+        "empty_files_mean": 0.05
+      },
+      {
+        "day": "Fri",
+        "rows_mean": 326028.76,
+        "rows_median": 436814.0,
+        "empty_files_mean": 0.2
+      },
+      {
+        "day": "Sat",
+        "rows_mean": 571601.52,
+        "rows_median": 575733.0,
+        "empty_files_mean": 0.0
+      },
+      {
+        "day": "Sun",
+        "rows_mean": 599523.15,
+        "rows_median": 599610.0,
+        "empty_files_mean": 0.0
+      }
+    ],
+    "insights_for_incidences": [
+      "Upload pattern: Essentially daily cadence including weekends; 97.5% of days have uploads.",
+      "Only 5 isolated days without uploads across 194-day window (≈2.5% of days).",
+      "Empty/small files (4.5%) confined to initial backfill period (Feb 20-21); not part of ongoing pattern.",
+      "Typical upload window 14:30-16:30 UTC; weekend uploads follow same pattern.",
+      "Weekends show higher volumes than weekdays (Sat: 575k, Sun: 599k median rows)."
+    ],
+    "source_id": "224602"
+  },
+  {
+    "resource_id": "224603",
+    "general_volume_stats": {
+      "mean_rows": 17804.67,
+      "median_rows": 18407.0,
+      "stdev_rows": 7490.97,
+      "pct_empty_files": 2.9
+    },
+    "file_processing_daily_stats": [
+      {
+        "day": "Mon",
+        "mean_files": 1,
+        "median_files": 1
+      },
+      {
+        "day": "Tue",
+        "mean_files": 1,
+        "median_files": 1
+      },
+      {
+        "day": "Wed",
+        "mean_files": 1,
+        "median_files": 1
+      },
+      {
+        "day": "Thu",
+        "mean_files": 1,
+        "median_files": 1
+      },
+      {
+        "day": "Fri",
+        "mean_files": 1,
+        "median_files": 1
+      },
+      {
+        "day": "Sat",
+        "mean_files": 1,
+        "median_files": 1
+      },
+      {
+        "day": "Sun",
+        "mean_files": 1,
+        "median_files": 1
+      }
+    ],
+    "upload_schedule_daily_stats": [
+      {
+        "day": "Mon",
+        "upload_window_expected_utc": "12:00:00–12:00:00 UTC"
+      },
+      {
+        "day": "Tue",
+        "upload_window_expected_utc": "12:00:00–12:00:00 UTC"
+      },
+      {
+        "day": "Wed",
+        "upload_window_expected_utc": "12:00:00–12:00:00 UTC"
+      },
+      {
+        "day": "Thu",
+        "upload_window_expected_utc": "12:00:00–12:00:00 UTC"
+      },
+      {
+        "day": "Fri",
+        "upload_window_expected_utc": "12:00:00–12:00:00 UTC"
+      },
+      {
+        "day": "Sat",
+        "upload_window_expected_utc": "12:00:00–12:00:00 UTC"
+      },
+      {
+        "day": "Sun",
+        "upload_window_expected_utc": "12:00:00–12:00:00 UTC"
+      }
+    ],
+    "day_of_week_row_stats": [
+      {
+        "day": "Mon",
+        "rows_mean": 21643.37,
+        "rows_median": 20943.5,
+        "empty_files_mean": 0.0
+      },
+      {
+        "day": "Tue",
+        "rows_mean": 19815.33,
+        "rows_median": 18486.0,
+        "empty_files_mean": 0.0
+      },
+      {
+        "day": "Wed",
+        "rows_mean": 18689.78,
+        "rows_median": 17563.0,
+        "empty_files_mean": 0.0
+      },
+      {
+        "day": "Thu",
+        "rows_mean": 13034.65,
+        "rows_median": 15928.0,
+        "empty_files_mean": 0.0
+      },
+      {
+        "day": "Fri",
+        "rows_mean": 14366.34,
+        "rows_median": 16673.5,
+        "empty_files_mean": 0.11
+      },
+      {
+        "day": "Sat",
+        "rows_mean": 21112.37,
+        "rows_median": 20013.0,
+        "empty_files_mean": 0.0
+      },
+      {
+        "day": "Sun",
+        "rows_mean": 22828.07,
+        "rows_median": 20828.0,
+        "empty_files_mean": 0.0
+      }
+    ],
+    "insights_for_incidences": [
+      "Recurrence of empty files would be atypical.",
+      "Predominantly one file per day (mode=1 across all days).",
+      "Row counts normally lie inside 10 k – 30 k regardless of weekday.",
+      "All days (including weekends) show active processing with comparable volumes.",
+      "Two distinct upload timing regimes observed: 15:10 UTC (Feb-Jun) and 12:15 UTC (Jul-Aug).",
+      "Normal file size range is 3,122-32,487 rows (95% interval)."
+    ],
+    "source_id": "224603"
+  },
+  {
+    "resource_id": "228036",
+    "general_volume_stats": {
+      "mean_rows": 301980.51,
+      "median_rows": 284069.0,
+      "stdev_rows": 224439.0,
+      "pct_empty_files": 3.4
+    },
+    "file_processing_daily_stats": [
+      {
+        "day": "Mon",
+        "mean_files": 2,
+        "median_files": 2
+      },
+      {
+        "day": "Tue",
+        "mean_files": 2,
+        "median_files": 2
+      },
+      {
+        "day": "Wed",
+        "mean_files": 2,
+        "median_files": 2
+      },
+      {
+        "day": "Thu",
+        "mean_files": 2,
+        "median_files": 2
+      },
+      {
+        "day": "Fri",
+        "mean_files": 2,
+        "median_files": 2
+      },
+      {
+        "day": "Sat",
+        "mean_files": 0,
+        "median_files": 0
+      },
+      {
+        "day": "Sun",
+        "mean_files": 0,
+        "median_files": 0
+      }
+    ],
+    "upload_schedule_daily_stats": [
+      {
+        "day": "Mon",
+        "upload_window_expected_utc": "20:00:00–20:00:00 UTC"
+      },
+      {
+        "day": "Tue",
+        "upload_window_expected_utc": "20:00:00–20:00:00 UTC"
+      },
+      {
+        "day": "Wed",
+        "upload_window_expected_utc": "20:00:00–20:00:00 UTC"
+      },
+      {
+        "day": "Thu",
+        "upload_window_expected_utc": "20:00:00–20:00:00 UTC"
+      },
+      {
+        "day": "Fri",
+        "upload_window_expected_utc": "20:00:00–20:00:00 UTC"
+      },
+      {
+        "day": "Sat",
+        "upload_window_expected_utc": "20:00:00–20:00:00 UTC"
+      },
+      {
+        "day": "Sun",
+        "upload_window_expected_utc": null
+      }
+    ],
+    "day_of_week_row_stats": [
+      {
+        "day": "Mon",
+        "rows_mean": 612241.0,
+        "rows_median": 984791.5,
+        "empty_files_mean": 0.09
+      },
+      {
+        "day": "Tue",
+        "rows_mean": 198343.63,
+        "rows_median": 252296.5,
+        "empty_files_mean": 0.07
+      },
+      {
+        "day": "Wed",
+        "rows_mean": 157332.27,
+        "rows_median": 251555.5,
+        "empty_files_mean": 0.08
+      },
+      {
+        "day": "Thu",
+        "rows_mean": 321299.09,
+        "rows_median": 302947.0,
+        "empty_files_mean": 0.01
+      },
+      {
+        "day": "Fri",
+        "rows_mean": 186131.41,
+        "rows_median": 272454.0,
+        "empty_files_mean": 0.05
+      },
+      {
+        "day": "Sat",
+        "rows_mean": 304565.51,
+        "rows_median": 306165.0,
+        "empty_files_mean": 0.03
+      },
+      {
+        "day": "Sun",
+        "rows_mean": null,
+        "rows_median": null,
+        "empty_files_mean": null
+      }
+    ],
+    "insights_for_incidences": [
+      "92% of files arrive between 20:10-20:25 UTC; extremely stable pattern.",
+      "Upload pattern: Primarily business days; occasional Saturday activity.",
+      "No uploads are expected on Sunday.",
+      "Empty files are all associated with the 'anota-ai' merchant.",
+      "Large multi-day files (>900k rows) occur every 2-3 weeks and are considered normal."
+    ],
+    "source_id": "228036"
+  },
+  {
+    "resource_id": "228038",
+    "general_volume_stats": {
+      "mean_rows": 265529.7,
+      "median_rows": 231975.0,
+      "stdev_rows": 308199.04,
+      "pct_empty_files": 19.1
+    },
+    "file_processing_daily_stats": [
+      {
+        "day": "Mon",
+        "mean_files": 2,
+        "median_files": 2
+      },
+      {
+        "day": "Tue",
+        "mean_files": 2,
+        "median_files": 2
+      },
+      {
+        "day": "Wed",
+        "mean_files": 2,
+        "median_files": 2
+      },
+      {
+        "day": "Thu",
+        "mean_files": 2,
+        "median_files": 2
+      },
+      {
+        "day": "Fri",
+        "mean_files": 2,
+        "median_files": 2
+      },
+      {
+        "day": "Sat",
+        "mean_files": 0,
+        "median_files": 0
+      },
+      {
+        "day": "Sun",
+        "mean_files": 0,
+        "median_files": 0
+      }
+    ],
+    "upload_schedule_daily_stats": [
+      {
+        "day": "Mon",
+        "upload_window_expected_utc": "20:00:00–20:00:00 UTC"
+      },
+      {
+        "day": "Tue",
+        "upload_window_expected_utc": "20:00:00–20:00:00 UTC"
+      },
+      {
+        "day": "Wed",
+        "upload_window_expected_utc": "20:00:00–20:00:00 UTC"
+      },
+      {
+        "day": "Thu",
+        "upload_window_expected_utc": "20:00:00–20:00:00 UTC"
+      },
+      {
+        "day": "Fri",
+        "upload_window_expected_utc": "20:00:00–20:00:00 UTC"
+      },
+      {
+        "day": "Sat",
+        "upload_window_expected_utc": "20:00:00–20:00:00 UTC"
+      },
+      {
+        "day": "Sun",
+        "upload_window_expected_utc": null
+      }
+    ],
+    "day_of_week_row_stats": [
+      {
+        "day": "Mon",
+        "rows_mean": 436869.09,
+        "rows_median": 406646.0,
+        "empty_files_mean": 0.18
+      },
+      {
+        "day": "Tue",
+        "rows_mean": 222918.3,
+        "rows_median": 248740.0,
+        "empty_files_mean": 0.15
+      },
+      {
+        "day": "Wed",
+        "rows_mean": 160930.15,
+        "rows_median": 216905.5,
+        "empty_files_mean": 0.08
+      },
+      {
+        "day": "Thu",
+        "rows_mean": 296810.0,
+        "rows_median": 236455.0,
+        "empty_files_mean": 0.21
+      },
+      {
+        "day": "Fri",
+        "rows_mean": 157050.3,
+        "rows_median": 225715.0,
+        "empty_files_mean": 0.09
+      },
+      {
+        "day": "Sat",
+        "rows_mean": 236639.97,
+        "rows_median": 236190.0,
+        "empty_files_mean": 0.31
+      },
+      {
+        "day": "Sun",
+        "rows_mean": null,
+        "rows_median": null,
+        "empty_files_mean": null
+      }
+    ],
+    "insights_for_incidences": [
+      "Uploads occur in a tight window (20:05-20:35 UTC).",
+      "Upload pattern is primarily on business days, with occasional Saturday activity.",
+      "No processing activity is expected on Sunday.",
+      "Thursday shows exceptional peak volume.",
+      "Empty files (19.1%) and large files (>1M rows) are present in the historical record and should not automatically trigger alerts."
+    ],
+    "source_id": "228038"
+  },
+  {
+    "resource_id": "239611",
+    "general_volume_stats": {
+      "mean_rows": 14752.53,
+      "median_rows": 13818.5,
+      "stdev_rows": 11286.7,
+      "pct_empty_files": 4.5
+    },
+    "file_processing_daily_stats": [
+      {
+        "day": "Mon",
+        "mean_files": 2,
+        "median_files": 2
+      },
+      {
+        "day": "Tue",
+        "mean_files": 2,
+        "median_files": 2
+      },
+      {
+        "day": "Wed",
+        "mean_files": 2,
+        "median_files": 2
+      },
+      {
+        "day": "Thu",
+        "mean_files": 2,
+        "median_files": 2
+      },
+      {
+        "day": "Fri",
+        "mean_files": 2,
+        "median_files": 2
+      },
+      {
+        "day": "Sat",
+        "mean_files": 0,
+        "median_files": 0
+      },
+      {
+        "day": "Sun",
+        "mean_files": 0,
+        "median_files": 0
+      }
+    ],
+    "upload_schedule_daily_stats": [
+      {
+        "day": "Mon",
+        "upload_window_expected_utc": "20:00:00–20:00:00 UTC"
+      },
+      {
+        "day": "Tue",
+        "upload_window_expected_utc": "20:00:00–20:00:00 UTC"
+      },
+      {
+        "day": "Wed",
+        "upload_window_expected_utc": "20:00:00–20:00:00 UTC"
+      },
+      {
+        "day": "Thu",
+        "upload_window_expected_utc": "20:00:00–20:00:00 UTC"
+      },
+      {
+        "day": "Fri",
+        "upload_window_expected_utc": "20:00:00–20:00:00 UTC"
+      },
+      {
+        "day": "Sat",
+        "upload_window_expected_utc": "20:00:00–20:00:00 UTC"
+      },
+      {
+        "day": "Sun",
+        "upload_window_expected_utc": null
+      }
+    ],
+    "day_of_week_row_stats": [
+      {
+        "day": "Mon",
+        "rows_mean": 27749.82,
+        "rows_median": 42440.0,
+        "empty_files_mean": 0.14
+      },
+      {
+        "day": "Tue",
+        "rows_mean": 8698.09,
+        "rows_median": 13030.0,
+        "empty_files_mean": 0.09
+      },
+      {
+        "day": "Wed",
+        "rows_mean": 14020.13,
+        "rows_median": 15033.0,
+        "empty_files_mean": 0.04
+      },
+      {
+        "day": "Thu",
+        "rows_mean": 15578.78,
+        "rows_median": 13716.0,
+        "empty_files_mean": 0.01
+      },
+      {
+        "day": "Fri",
+        "rows_mean": 8729.27,
+        "rows_median": 12253.5,
+        "empty_files_mean": 0.05
+      },
+      {
+        "day": "Sat",
+        "rows_mean": 10031.67,
+        "rows_median": 11753.0,
+        "empty_files_mean": 0.0
+      },
+      {
+        "day": "Sun",
+        "rows_mean": null,
+        "rows_median": null,
+        "empty_files_mean": null
+      }
+    ],
+    "insights_for_incidences": [
+      "Absence of weekday uploads would be anomalous.",
+      "No processing activity is expected on Sunday.",
+      "Uploads occur in a remarkably consistent window (20:12-20:23 UTC).",
+      "Empty files are a recurring pattern (4.5% of total), concentrated in 'anota-ai' merchant files.",
+      "Monday consolidated files (>=40k rows) are a normal weekly pattern.",
+      "The merchant 'anota-ai' consistently sends small (<50 rows) or empty files."
+    ],
+    "source_id": "239611"
+  },
+  {
+    "resource_id": "239613",
+    "general_volume_stats": {
+      "mean_rows": 15410.35,
+      "median_rows": 13431.5,
+      "stdev_rows": 17755.44,
+      "pct_empty_files": 9.9
+    },
+    "file_processing_daily_stats": [
+      {
+        "day": "Mon",
+        "mean_files": 2,
+        "median_files": 2
+      },
+      {
+        "day": "Tue",
+        "mean_files": 2,
+        "median_files": 2
+      },
+      {
+        "day": "Wed",
+        "mean_files": 2,
+        "median_files": 2
+      },
+      {
+        "day": "Thu",
+        "mean_files": 2,
+        "median_files": 2
+      },
+      {
+        "day": "Fri",
+        "mean_files": 2,
+        "median_files": 2
+      },
+      {
+        "day": "Sat",
+        "mean_files": 0,
+        "median_files": 0
+      },
+      {
+        "day": "Sun",
+        "mean_files": 0,
+        "median_files": 0
+      }
+    ],
+    "upload_schedule_daily_stats": [
+      {
+        "day": "Mon",
+        "upload_window_expected_utc": "20:00:00–20:00:00 UTC"
+      },
+      {
+        "day": "Tue",
+        "upload_window_expected_utc": "20:00:00–20:00:00 UTC"
+      },
+      {
+        "day": "Wed",
+        "upload_window_expected_utc": "20:00:00–20:00:00 UTC"
+      },
+      {
+        "day": "Thu",
+        "upload_window_expected_utc": "20:00:00–20:00:00 UTC"
+      },
+      {
+        "day": "Fri",
+        "upload_window_expected_utc": "20:00:00–20:00:00 UTC"
+      },
+      {
+        "day": "Sat",
+        "upload_window_expected_utc": "20:00:00–20:00:00 UTC"
+      },
+      {
+        "day": "Sun",
+        "upload_window_expected_utc": null
+      }
+    ],
+    "day_of_week_row_stats": [
+      {
+        "day": "Mon",
+        "rows_mean": 21543.05,
+        "rows_median": 26.0,
+        "empty_files_mean": 0.0
+      },
+      {
+        "day": "Tue",
+        "rows_mean": 12756.65,
+        "rows_median": 14110.0,
+        "empty_files_mean": 0.0
+      },
+      {
+        "day": "Wed",
+        "rows_mean": 14735.05,
+        "rows_median": 13819.0,
+        "empty_files_mean": 0.0
+      },
+      {
+        "day": "Thu",
+        "rows_mean": 18414.49,
+        "rows_median": 13701.0,
+        "empty_files_mean": 0.0
+      },
+      {
+        "day": "Fri",
+        "rows_mean": 8621.88,
+        "rows_median": 12250.5,
+        "empty_files_mean": 0.0
+      },
+      {
+        "day": "Sat",
+        "rows_mean": 6079.0,
+        "rows_median": 6079.0,
+        "empty_files_mean": 0.0
+      },
+      {
+        "day": "Sun",
+        "rows_mean": null,
+        "rows_median": null,
+        "empty_files_mean": null
+      }
+    ],
+    "insights_for_incidences": [
+      "Uploads consistenly happen on business days; minimal weekend presence and no uploads on Sundays is normal.",
+      "Upload timing is in an extremely tight window (20:05-20:23 UTC) for most days.",
+      "Empty files are common (9.9%) and predominantly associated with 'stopped' status files.",
+      "Large files (>50k rows) are anomalous and appear 1-2 times per month, typically on Mondays or month-opening dates.",
+      "Data drift noted: From June 2025 onward, typical row counts declined by ~25%."
+    ],
+    "source_id": "239613"
   }
 ]

@@ -2,7 +2,7 @@ import os
 import json
 import re
 import sys
-import asyncio # <--- 1. Importamos asyncio
+import asyncio
 
 # Añadimos la ruta raíz del proyecto al sys.path
 project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
@@ -32,22 +32,22 @@ def clean_json_string(raw_string: str) -> str | None:
         return match.group(1)
     return None
 
-# 2. Convertimos main en una función asíncrona
 async def main():
-    """Script principal para orquestar la minería de datos siguiendo el patrón Runner/Session."""
+    """Script principal para orquestar la minería de datos de todos los CVs."""
     print("--- Iniciando el Proceso de Minería de Datos de CVs (Patrón ADK Async Runner) ---")
 
     session_service = InMemorySessionService()
     runner = Runner(agent=data_miner_agent, app_name=APP_NAME, session_service=session_service)
 
-    cv_files = ["195385_native.md"] 
-    print(f"--- MODO PRUEBA ACTIVO: Procesando solo 1 archivo ({cv_files[0]}) ---")
+    # --- PROCESAMIENTO COMPLETO: Procesar todos los archivos ---
+    cv_files = [f for f in os.listdir(CV_FOLDER_PATH) if f.endswith('_native.md')]
+    print(f"Se encontraron {len(cv_files)} archivos CV para procesar en total.")
 
     all_cv_data = []
     for cv_file in cv_files:
         file_path = os.path.join(CV_FOLDER_PATH, cv_file)
         if not os.path.exists(file_path):
-            print(f"!! ERROR DE PRUEBA: El archivo '{cv_file}' no existe.")
+            print(f"!! ADVERTENCIA: Saltando archivo no encontrado en '{file_path}'")
             continue
 
         source_id = cv_file.split('_')[0]
@@ -55,19 +55,16 @@ async def main():
         
         print(f"\n--- Procesando CV para source_id: {source_id} ---")
 
-        # 3. Usamos 'await' para la creación de la sesión
         await session_service.create_session(app_name=APP_NAME, user_id=USER_ID, session_id=session_id)
         
         user_prompt = f"Por favor, lee el archivo usando la herramienta read_file_content con la ruta '{file_path}' y extrae la información estructurada como se te indicó en tus instrucciones."
         user_message = types.Content(role='user', parts=[types.Part(text=user_prompt)])
 
         try:
-            # 4. Usamos 'async for' y 'runner.run_async()'
             final_response_text = None
             async for event in runner.run_async(user_id=USER_ID, session_id=session_id, new_message=user_message):
                 if event.is_final_response() and event.content:
                     final_response_text = event.content.parts[0].text.strip()
-                    # No rompemos el bucle, dejamos que el generador se complete
             
             if final_response_text:
                 json_string = clean_json_string(final_response_text)
@@ -94,6 +91,5 @@ async def main():
     else:
         print("\n--- Proceso completado, pero no se extrajo información de ningún CV. ---")
 
-# 5. Ejecutamos la función asíncrona principal con asyncio.run()
 if __name__ == '__main__':
     asyncio.run(main())
